@@ -1,0 +1,35 @@
+.start-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  color: #fff;
+  gap: 10px;
+}
+.start-container .start-logo {
+  font-weight: 550;
+  animation: bounce 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-20px);
+  }
+}
+
+.start-btn {
+  padding: 10px 18px;
+  margin: 5px 0;
+  border: none;
+  border-radius: 10px;
+  background-color: #3664c1;
+  color: #fff;
+  transition: all 0.2s ease;
+}
+.start-btn:hover {
+  transform: translateY(-5px) scale(1.05);
+}

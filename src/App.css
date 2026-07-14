@@ -1,0 +1,55 @@
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  color: #fff;
+  width: 100%;
+  max-width: 800px;
+  justify-self: center;
+}
+
+header .top-section {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  padding: 10px;
+}
+
+header .left-section {
+  grid-column: 1;
+  justify-self: left;
+}
+
+header .top-section .start-page-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1px;
+  border-radius: 5px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.start-page-link:hover {
+  background-color: #464646ac;
+}
+
+header .logo {
+  grid-column: 2;
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
+}
+
+header .start-page-link {
+  color: #fff;
+}
+
+header .score-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 4px;
+  font-size: 0.75rem;
+  padding: 8px;
+}
